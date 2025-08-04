@@ -243,8 +243,8 @@ img {
 }
 
 .service-box h5 {
-margin-top: 24px;
-margin-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 12px;
 
 }
 
@@ -254,23 +254,23 @@ margin-bottom: 12px;
     font-size: 16px;
     text-align: unset;
     line-height: 24px;
-   
-   
+
+
 }
 
 /*nuestro trabajo*/
 
 
 
-.project-slider .owl-next ,
+.project-slider .owl-next,
 .project-slider .owl-prev {
-    background-color: rgba(194, 194, 194,0.5) !important;
-   
+    background-color: rgba(194, 194, 194, 0.5) !important;
+
 }
 
-.project-slider .owl-next:hover ,
+.project-slider .owl-next:hover,
 .project-slider .owl-prev:hover {
-   background-color: rgba(210, 243, 243, 0.5) !important;
+    background-color: rgba(210, 243, 243, 0.5) !important;
 }
 
 .project {
@@ -284,22 +284,23 @@ margin-bottom: 12px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom ,rgba(51, 44, 40, 0.0), rgba(34, 33, 48, 0.9));
+    background-image: linear-gradient(to bottom, rgba(51, 44, 40, 0.0), rgba(34, 33, 48, 0.9));
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .project .content {
-   position: absolute;
-   width: 100%;
-   bottom: 0;
-   left: 0;
-   padding: 32px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 32px;
 
 }
 
-.project h1 , .project h6{
+.project h1,
+.project h6 {
     color: aliceblue;
 
 }
@@ -317,36 +318,38 @@ margin-bottom: 12px;
     width: 24px;
     height: 2px;
     background-color: #f7b016;
-   margin-right: 12px;
+    margin-right: 12px;
     vertical-align: middle;
 }
 
 /*team*/
- .intro-ceo h6{
+.intro-ceo h6 {
     color: #f7b016;
     font-weight: 700;
- }
+}
 
- .intro-ceo h1 {
+.intro-ceo h1 {
     color: #010102;
     text-align: center;
-    
-    font-weight: 900;
- }
 
- .intro-ceo p {
+    font-weight: 900;
+}
+
+.intro-ceo p {
     font-size: larger;
     color: #5f5f5f;
- }
-
-.team-member{
-   text-align: center;
 }
+
+.team-member {
+    text-align: center;
+}
+
 .ceo {
     margin-top: 20px;
-    
+
 }
-.ceo h2{
+
+.ceo h2 {
     color: #111111;
     font-size: 30px;
     font-weight: 900;
@@ -356,13 +359,15 @@ margin-bottom: 12px;
 .intro-administrativo {
     margin-top: 10%;
 }
-.intro-administrativo h2{
+
+.intro-administrativo h2 {
     color: #010102;
     font-weight: 900;
     padding: 15px;
 }
+
 .team-member .img-wrapper {
-   
+
     position: relative;
 
     overflow: hidden;
@@ -377,18 +382,18 @@ margin-bottom: 12px;
     background-color: rgba(99, 99, 99, 0.5);
 }
 
-.team-member .social-link{
-    
+.team-member .social-link {
+
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     transition: all 0.4s ease;
     opacity: 0;
 }
 
 .team-member .social-link a {
-   
+
     color: #fcf6f6;
     font-size: 20px;
     border-radius: 25px;
@@ -410,9 +415,61 @@ margin-bottom: 12px;
     top: 70%;
 }
 
-.team-member h5{
+.team-member h5 {
     margin-top: 13px;
     font-weight: 700;
     color: #010102;
 }
 
+/*seccion del footer*/
+
+footer {
+    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../img/bg_banner1.jpg), #082032;
+    ;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    color: #fcf6f6;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .navbar-brand {
+    color: #fcf6f6;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.footer-top {
+    margin-bottom: 40px;
+
+}
+
+.footer-bottom {
+
+
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+footer .social-link a {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(24, 36, 46);
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 24px;
+    margin-left: 5px;
+    margin: 5px;
+
+}
+
+footer .social-link a:hover {
+    background-color: #fff;
+    color: #f7b016;
+}
