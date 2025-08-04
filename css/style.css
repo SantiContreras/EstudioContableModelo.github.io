@@ -1,7 +1,7 @@
 * {
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     font-variation-settings:
         "wdth" 100,
@@ -260,7 +260,17 @@ img {
 
 /*nuestro trabajo*/
 
+.nuestroTrabajo h6{
+    font-weight: 700;
+    color: #f7b016;
+    text-transform: uppercase;
 
+}
+
+.nuestroTrabajo p {
+    font-weight: 400;
+    color: #5f5f5f;
+}
 
 .project-slider .owl-next,
 .project-slider .owl-prev {
@@ -276,6 +286,8 @@ img {
 .project {
     position: relative;
 }
+
+
 
 .project .overlay {
     position: absolute;
@@ -338,6 +350,7 @@ img {
 .intro-ceo p {
     font-size: larger;
     color: #5f5f5f;
+    font-weight: 400;
 }
 
 .team-member {
@@ -472,4 +485,12 @@ footer .social-link a {
 footer .social-link a:hover {
     background-color: #fff;
     color: #f7b016;
+}
+
+/*seccion formulario*/
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #f7b016;
+
 }

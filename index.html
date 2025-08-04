@@ -5,18 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
-
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -94,7 +90,8 @@
                     </li>
 
                 </ul>
-                <a class="btns btn-brand ms-lg-3">contactanos</a>
+                <a class="btns btn-brand ms-lg-3" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">contactanos</a>
             </div>
         </div>
     </nav>
@@ -108,7 +105,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <H6 class="text-uppercase text-white">Soluciones epresariales</H6>
+                        <H6 class="text-uppercase text-white">Soluciones para tu empresa</H6>
                         <h1 class="display-5 text-white my-3
                         ">BIENVENIDOS ESTUDIO CONTABLE BIANCHINI</h1>
                         <a href="#" class="btns btn-brand"> Comencemos</a>
@@ -122,7 +119,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <H6 class="text-uppercase text-white">Soluciones epresariales</H6>
+                        <H6 class="text-uppercase text-white">Soluciones para tu empresa</H6>
                         <h1 class="display-5 text-white my-3
                         ">BIENVENIDOS ESTUDIO CONTABLE BIANCHINI</h1>
                         <a href="#" class="btns btn-brand"> Comencemos</a>
@@ -307,7 +304,7 @@
                 <div class="col-12 text-center">
                     <h6>Nuestro trabajo</h6>
                     <h1 class="fw-bold fs-1">Proyectos destacados</h1>
-                    <p class="fw-bold fsdiv-4 text-center">A lo largo de nuestra trayectoria, hemos trabajado en una
+                    <p class=" fs-4 text-center">A lo largo de nuestra trayectoria, hemos trabajado en una
                         variedad de proyectos que reflejan nuestra
                         experiencia y compromiso con la excelencia.</p>
                 </div>
@@ -354,7 +351,7 @@
                 <div class="col-12 text-center">
                     <h6 class="text-uppercase"> Nuestro equipo</h6>
                     <h1>Conoce a nuestro equipo</h1>
-                    <p class="fw-bold fs-4 text-center">Contamos con un equipo de profesionales altamente capacitados y
+                    <p class=" fs-4 text-center">Contamos con un equipo de profesionales altamente capacitados y
                         comprometidos con la excelencia.</p>
                 </div>
             </div>
@@ -659,7 +656,67 @@
 
     </footer>
 
+    <!--
+        <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+    -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 bg-cover"
+                                    style="background-image: url(./img/mujer-oficina-ordenador-trabajar-wallpaper-preview.jpg); min-height: 300px;">
+                                </div>
+                                <div class="col-lg-8">
+                                    <form action="" class="p-lg-5 col-12 row g-3">
+                                        <div class="col-12">
+                                             <h1> Ponte en contacto</h1>
+                                        <p>Dejanos tu mensaje te asesoraremos lo antes posible.</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <label for="exampleInputEmail1" class="form-label">Apellido:</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="exampleInputEmail1" class="form-label">Nombre:</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label for="exampleInputEmail1" class="form-label">Correo:</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="message" class="form-label">Mensaje</label>
+                                            <textarea name="" id="" cols="30" rows="4" class="form-control"
+                                                placeholder="wuau , tu eres maravilloso.!!"></textarea>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="button" class="btn btn-primary">Enviar Mensaje</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/jquery.min copy.js"></script>
@@ -668,14 +725,6 @@
     <script src="js/bootstrap.js.map"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/app.js"></script>
-
-
-
-
-
-
-
-
 </body>
 
 </html>
