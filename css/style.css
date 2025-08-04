@@ -1,0 +1,418 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+body {
+    font-family: "barlow", sans-serif;
+    color: #4e4847;
+    list-style: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700 !important;
+}
+
+a {
+    color: #010102;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/*imagenes */
+img {
+    width: 100%;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* top navbar */
+
+.topNavbar {
+    background-color: black;
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+
+.topNavbar p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: #f7b016;
+}
+
+.topNavbar i,
+.topNavbar span {
+    vertical-align: middle;
+    font-size: 15PX;
+}
+
+.social-link a {
+    width: 34px;
+    height: 34px;
+    background-color: rgb(160, 169, 177);
+    display: inline-flex;
+    color: bisque;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 20px;
+}
+
+.social-link a:hover {
+    background-color: antiquewhite;
+    color: #4e4847;
+}
+
+
+/* navbar */
+.navbar {
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active:hover {
+    color: #97b104;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.navbar-brand span {
+    color: #f7b016;
+    font-size: 30px;
+}
+
+.navbar-brand .span2 {
+    color: #6d6868;
+    font-size: 15px;
+}
+
+.btns {
+    padding: 9px 26px;
+    border-radius: 10px;
+}
+
+.btn-brand {
+
+    color: rgb(14, 40, 63);
+    background-color: #f7b016;
+}
+
+.btn-brand:hover {
+    color: rgb(228, 227, 224);
+    background-color: rgb(128, 71, 3);
+    cursor: pointer;
+}
+
+
+.slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slide1 {
+    background-image: linear-gradient(rgba(9, 12, 50, 0.4), rgba(9, 32, 50, 0.4)), url(/img/grupalEstudioDelCerro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide2 {
+    background-image: linear-gradient(rgba(9, 12, 50, 0.4), rgba(9, 32, 50, 0.4)), url(/img/HA059-scaled-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/*owl carousel*/
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    display: grid;
+    place-items: center;
+    background-color: rgba(rgb(223, 199, 199), green, blue, alpha) !important;
+    font-weight: 700 !important;
+    margin-top: -30px !important;
+    font-size: 12px !important;
+    border-radius: 100px !important;
+    color: #d1cfcb !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+    right: 0;
+}
+
+/*inforacion sobre nosotros*/
+
+
+.info-box {
+    display: flex;
+    align-items: center;
+
+}
+
+.info-box img {
+    width: 90px;
+    margin-right: 24px;
+
+}
+
+/* milestane */
+.milestones {
+    background-image: linear-gradient(rgba(235, 99, 20, 0.9), rgba(150, 83, 39, 0.9)), url(/img/HA059-scaled-1.jpg);
+
+}
+
+.milestones p {
+    color: bisque;
+    font-weight: 700;
+}
+
+/*servicios*/
+
+.intro {
+    margin-bottom: 40px;
+    height: 140px;
+    text-align: center;
+}
+
+.intro h6 {
+    color: #948d27;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.intro h1 {
+    color: #010102;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #6e6248;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.service-box {
+    padding: 50px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    height: 100%;
+
+}
+
+.service-box img {
+    width: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-box h5 {
+margin-top: 24px;
+margin-bottom: 12px;
+
+}
+
+.service-box p {
+    color: #6e6a66;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: unset;
+    line-height: 24px;
+   
+   
+}
+
+/*nuestro trabajo*/
+
+
+
+.project-slider .owl-next ,
+.project-slider .owl-prev {
+    background-color: rgba(194, 194, 194,0.5) !important;
+   
+}
+
+.project-slider .owl-next:hover ,
+.project-slider .owl-prev:hover {
+   background-color: rgba(210, 243, 243, 0.5) !important;
+}
+
+.project {
+    position: relative;
+}
+
+.project .overlay {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom ,rgba(51, 44, 40, 0.0), rgba(34, 33, 48, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project .content {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   padding: 32px;
+
+}
+
+.project h1 , .project h6{
+    color: aliceblue;
+
+}
+
+.project h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.project h6::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background-color: #f7b016;
+   margin-right: 12px;
+    vertical-align: middle;
+}
+
+/*team*/
+ .intro-ceo h6{
+    color: #f7b016;
+    font-weight: 700;
+ }
+
+ .intro-ceo h1 {
+    color: #010102;
+    text-align: center;
+    
+    font-weight: 900;
+ }
+
+ .intro-ceo p {
+    font-size: larger;
+    color: #5f5f5f;
+ }
+
+.team-member{
+   text-align: center;
+}
+.ceo {
+    margin-top: 20px;
+    
+}
+.ceo h2{
+    color: #111111;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 15px;
+}
+
+.intro-administrativo {
+    margin-top: 10%;
+}
+.intro-administrativo h2{
+    color: #010102;
+    font-weight: 900;
+    padding: 15px;
+}
+.team-member .img-wrapper {
+   
+    position: relative;
+
+    overflow: hidden;
+}
+
+.team-member .overlay {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(99, 99, 99, 0.5);
+}
+
+.team-member .social-link{
+    
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member .social-link a {
+   
+    color: #fcf6f6;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 22px;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+.team-member .social-link a:hover {
+    background-color: rgba(216, 186, 186, 0.76);
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+    top: 0;
+}
+
+.team-member:hover .social-link {
+    opacity: 1;
+    top: 70%;
+}
+
+.team-member h5{
+    margin-top: 13px;
+    font-weight: 700;
+    color: #010102;
+}
+
