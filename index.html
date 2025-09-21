@@ -13,11 +13,46 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
 
+      
+    .btn-whatsapp {
+      position: fixed;
+      bottom: 20px;   /* distancia desde abajo */
+      right: 20px;    /* distancia desde la derecha */
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .btn-whatsapp:hover {
+      transform: scale(1.1);
+      background-color: #20b955;
+    }
+    </style>
 
     <title>Estudio Bianchini</title>
 </head>
+
+<!-- Apartado para el boton de whatsapp colgante-->
+   <a href="https://wa.me/543624783499" 
+     class="btn-whatsapp" 
+     target="_blank" 
+     aria-label="Chatea con nosotros en WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
@@ -66,28 +101,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">presentacion</a>
+                        <a class="nav-link active" aria-current="page" href="#presentaion">presentacion</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Proyectos</a>
+                        <a class="nav-link active" aria-current="page" href="#servicios">servicios</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Equipo</a>
+                        <a class="nav-link active" aria-current="page" href="#proyectos">Proyectos</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="#equipo">Equipo</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">servicios</a>
-                    </li>
+
 
                 </ul>
                 <a class="btns btn-brand ms-lg-3" type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -133,7 +166,7 @@
 
     <!-- Seccion sobre nosotros-->
 
-    <section>
+    <section id="nosotros">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -142,24 +175,22 @@
                             <img src="/img/icon2.png" alt="">
                             <div>
                                 <h5>Contabilidad Digital</h5>
-                                <p>Digitalizaos todas nuestras tareas para que nuestros clientes puedan ver nuestros
-                                    avances.</p>
+                                <p>Contabilidad digital: gestión financiera ágil y precisa mediante herramientas
+                                    tecnológicas.</p>
                             </div>
                         </div>
                         <div class="col-12 info-box">
-                            <img src="/img/icon2.png" alt="">
+                            <img src="/img/icon5.png" alt="">
                             <div>
-                                <h5>Contabilidad Digital</h5>
-                                <p>Digitalizaos todas nuestras tareas para que nuestros clientes puedan ver nuestros
-                                    avances.</p>
+                                <h5>Asesoramiento estrategico y financiero </h5>
+                                <p>Soluciones Financieras y Estrategias para el Crecimiento Empresarial.</p>
                             </div>
                         </div>
                         <div class="col-12 info-box">
-                            <img src="/img/icon2.png" alt="">
+                            <img src="/img/icon1.png" alt="">
                             <div>
-                                <h5>Contabilidad Digital</h5>
-                                <p>Digitalizaos todas nuestras tareas para que nuestros clientes puedan ver nuestros
-                                    avances.</p>
+                                <h5>Asesoramiento sobre servicios societarios</h5>
+                                <p>Acompañamiento Estratégico en la Constitución y Gestión de Sociedades.</p>
                             </div>
                         </div>
                     </div>
@@ -204,17 +235,17 @@
     </section>
 
     <!-- servicios-->
-    <section class="bg-cover services">
+    <section class="bg-cover services" id="servicios">
         <div class="container">
             <div class="row  intro">
                 <div class="col-12">
                     <h6> Nuestros servicios</h6>
                     <h1 class="fw-bold  fs-1">¿Que es lo que hacemos?</h1>
-                    <p class="fw-bold  fs-4">Ofrecemos una amplia gama de servicios contables para satisfacer las
+                    <p class="  fs-4">Ofrecemos una amplia gama de servicios contables para satisfacer las
                         necesidades de nuestros clientes.</p>
                 </div>
             </div>
-            <div class="row g-4 mt-5">
+            <div class="row g-4 mt-5 ">
                 <div class="col-lg-4 col-sm-6 ">
                     <div class="service-box ">
                         <img src="/img/icon1.png" alt="">
@@ -223,33 +254,44 @@
                             elaboración de balances, conciliaciones bancarias y cumplimiento de obligaciones fiscales.
                             Ayudamos a tu empresa a mantener una contabilidad ordenada y actualizada para facilitar la
                             toma de decisiones y asegurar el cumplimiento normativo.</p>
+                    
+
+                    </div>
+                    <div>
+
                     </div>
                 </div>
-                <div class="col-lg-4  col-sm-6">
+                <div class="col-lg-4  col-sm-6 d-flex flex-column">
                     <div class="service-box ">
                         <img src="/img/icon2.png" alt="">
                         <h5>Asesoramiento Fiscal</h5>
                         <p>Brindamos asesoramiento fiscal personalizado para optimizar la carga tributaria, asegurar el
                             cumplimiento de las obligaciones impositivas y aprovechar los beneficios fiscales vigentes.
                         </p>
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div class="service-box ">
+                    <div class="service-box align-items-end">
                         <img src="/img/icon3.png" alt="">
                         <h5>Auditoría</h5>
                         <p>Realizamos auditorías contables y financieras para asegurar la transparencia, confiabilidad y
                             cumplimiento normativo en la gestión de tu empresa.</p>
+                       
                     </div>
                 </div>
+                
                 <div class="col-lg-4 col-sm-6">
                     <div class="service-box ">
                         <img src="/img/icon4.png" alt="">
                         <h5>Consultoría Empresarial</h5>
                         <p>Brindamos consultoría estratégica para optimizar procesos, mejorar la gestión y potenciar el
                             crecimiento sostenible de tu empresa.</p>
+                 
                     </div>
                 </div>
+
+               
 
                 <div class="col-lg-4  col-sm-6">
                     <div class="service-box ">
@@ -259,6 +301,7 @@
                             escisión y disolución de sociedades comerciales. Incluye la redacción de estatutos, trámites
                             ante organismos públicos, regularización societaria y soporte legal-contable para el
                             cumplimiento de obligaciones formales.</p>
+                     
                     </div>
                 </div>
                 <div class="col-lg-4  col-sm-6">
@@ -269,6 +312,7 @@
                             incluyendo la planificación fiscal, liquidación de impuestos nacionales, provinciales y
                             municipales, presentación de declaraciones juradas y gestión de requerimientos ante
                             organismos fiscales.</p>
+                        
 
                     </div>
                 </div>
@@ -280,6 +324,7 @@
                             seguimiento y optimización de relaciones comerciales. Facilitamos la administración de
                             contratos, cumplimiento de pagos y análisis de desempeño para asegurar eficiencia,
                             transparencia y reducción de riesgos en la cadena de suministro.</p>
+                     
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
@@ -289,6 +334,7 @@
                         <p>Servicio y productos que abordan problemas o necesidades específicas utilizando tecnologías
                             de la información. Estas soluciones pueden ser diseñadas para mejorar la eficiencia, la
                             productividad o resolver desafíos específicos.</p>
+                    
                     </div>
                 </div>
             </div>
@@ -298,7 +344,7 @@
 
     <!-- seccion nuestro trabajo slider-->
 
-    <section class="bg-cover nuestroTrabajo">
+    <section class="bg-cover nuestroTrabajo" id="proyectos">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -345,7 +391,7 @@
 
     <!-- seccion de team-->
 
-    <section>
+    <section id="equipo">
         <div class="container intro-ceo">
             <div class="row">
                 <div class="col-12 text-center">
@@ -395,7 +441,8 @@
                             </div>
                             <div class="content">
                                 <h5>Del Cerro Luis Maria</h5>
-                                <p>Contador Director General.</p>
+                                <p> CEO | Contador Director General | Dirección Ejecutiva con Enfoque en Estrategia y
+                                    Contabilidad</p>
                             </div>
 
                         </div>
@@ -416,7 +463,7 @@
                             </div>
                             <div class="content">
                                 <h5>Bianchini Analia</h5>
-                                <p>Contador Senior Advance impositivo - Consejera delegada</p>
+                                <p>Contador Senior Advance impositivo | Consejera delegada</p>
                             </div>
 
                         </div>
@@ -677,8 +724,8 @@
                                 <div class="col-lg-8">
                                     <form action="" class="p-lg-5 col-12 row g-3">
                                         <div class="col-12">
-                                             <h1> Ponte en contacto</h1>
-                                        <p>Dejanos tu mensaje te asesoraremos lo antes posible.</p>
+                                            <h1> Ponte en contacto</h1>
+                                            <p>Dejanos tu mensaje te asesoraremos lo antes posible.</p>
                                         </div>
 
                                         <div class="col-lg-6">
@@ -699,7 +746,7 @@
                                         <div class="col-12">
                                             <label for="message" class="form-label">Mensaje</label>
                                             <textarea name="" id="" cols="30" rows="4" class="form-control"
-                                                placeholder="wuau , tu eres maravilloso.!!"></textarea>
+                                                placeholder="Estas a un paso de tu crecimiento empresarial"></textarea>
                                         </div>
 
                                         <div class="col-12">

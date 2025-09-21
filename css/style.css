@@ -69,9 +69,9 @@ img {
 .social-link a {
     width: 34px;
     height: 34px;
-    background-color: rgb(160, 169, 177);
+    background-color: rgb(66, 68, 70);
     display: inline-flex;
-    color: bisque;
+    color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     border-radius: 100%;
@@ -79,8 +79,8 @@ img {
 }
 
 .social-link a:hover {
-    background-color: antiquewhite;
-    color: #4e4847;
+    background-color: rgb(185, 187, 187);
+    color: #000000;
 }
 
 
@@ -91,7 +91,8 @@ img {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active:hover {
-    color: #97b104;
+    color: #f7b016;
+    font-weight: 500;
 }
 
 .navbar-brand {
@@ -121,7 +122,7 @@ img {
 }
 
 .btn-brand:hover {
-    color: rgb(228, 227, 224);
+    color: rgb(230, 192, 81);
     background-color: rgb(128, 71, 3);
     cursor: pointer;
 }
@@ -256,6 +257,31 @@ img {
     line-height: 24px;
 
 
+}
+
+.service-box .serviceIcon {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    border-radius: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 26px;
+}
+
+.service-box .serviceIcon:hover {
+    background-color: #e2a953;
+    cursor: pointer;
+}
+
+.service-box .row {
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
 }
 
 /*nuestro trabajo*/
