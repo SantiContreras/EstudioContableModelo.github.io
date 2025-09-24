@@ -30,17 +30,65 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                center: true,   
+                center: true,
             },
             768: {
                 items: 2
             },
             1140: {
                 items: 2,
-                center:true,
+                center: true,
                 dots: true
 
             }
         }
     })
+});
+
+
+/*(function () {
+    emailjs.init("gE3mMym6qyi929F90"); // 👈 reemplaza con tu Public Key
+})();
+
+const form = document.getElementById("contactForm");
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_pu9hmyj", "template_xbenpg9", this)
+        .then(() => {
+            msg.textContent = "✅ ¡Mensaje enviado con éxito!";
+            msg.className = "mensaje exito";
+            msg.style.display = "block";
+            form.reset();
+        }, (error) => {
+            msg.textContent = "❌ Error al enviar: " + JSON.stringify(error);
+            msg.className = "mensaje error";
+            msg.style.display = "block";
+        });
+});*/
+
+                     
+const btn = document.getElementById("button");
+
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  btn.value = "Sending...";
+
+  const serviceID = "default_service";
+  const templateID = "template_7ty8git";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      btn.value = "Send Email";
+      alert("Sent!");
+      msg.textContent = "✅ ¡Mensaje enviado con éxito!";
+    },
+    (err) => {
+      btn.value = "Send Email";
+      alert(JSON.stringify(err));
+    },
+  );
 });

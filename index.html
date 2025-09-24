@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('gE3mMym6qyi929F90')
+    </script>
+
+
     <style>
         .card-video .ratio {
             border-radius: .5rem .5rem 0 0;
@@ -220,8 +228,8 @@
 
                         <div class="card-body">
                             <h5 class="card-title">Te presentamos un poco lo que somos.</h5>
-                         
-                       
+
+
                         </div>
                     </div>
                 </div>
@@ -748,37 +756,38 @@
                                     style="background-image: url(./img/mujer-oficina-ordenador-trabajar-wallpaper-preview.jpg); min-height: 300px;">
                                 </div>
                                 <div class="col-lg-8">
-                                    <form action="" class="p-lg-5 col-12 row g-3">
+                                    <form  id="form" class="p-lg-5 col-12 row g-3">
                                         <div class="col-12">
                                             <h1> Ponte en contacto</h1>
                                             <p>Dejanos tu mensaje te asesoraremos lo antes posible.</p>
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <label for="exampleInputEmail1" class="form-label">Apellido:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp">
+                                            <label for="apellido" class="form-label">Apellido:</label>
+                                            <input type="text" class="form-control" name="apellido" id="apellido"
+                                                aria-describedby="">
                                         </div>
                                         <div class="col-lg-6">
-                                            <label for="exampleInputEmail1" class="form-label">Nombre:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                            <label for="name" class="form-label">Nombre:</label>
+                                            <input type="text" class="form-control" name="nombre" id="name"
                                                 aria-describedby="emailHelp">
                                         </div>
                                         <div class="col-lg-12">
-                                            <label for="exampleInputEmail1" class="form-label">Correo:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                            <label for="email" class="form-label">Correo:</label>
+                                            <input type="email" class="form-control" name="email" id="email"
                                                 aria-describedby="emailHelp">
                                         </div>
                                         <div class="col-12">
                                             <label for="message" class="form-label">Mensaje</label>
-                                            <textarea name="" id="" cols="30" rows="4" class="form-control"
+                                            <textarea name="" id="message" cols="30" rows="4" class="form-control"
+                                                name="mensaje"
                                                 placeholder="Estas a un paso de tu crecimiento empresarial"></textarea>
                                         </div>
 
-                                        <div class="col-12">
+                                        <div class="col-12" id="msg">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cancelar</button>
-                                            <button type="button" class="btn btn-primary">Enviar Mensaje</button>
+                                             <input type="submit" id="button" value="Send Email" class="btn btn-primary">
                                         </div>
                                     </form>
                                 </div>
