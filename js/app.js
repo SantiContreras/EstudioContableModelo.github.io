@@ -85,6 +85,11 @@ document.getElementById("form").addEventListener("submit", function (event) {
       btn.value = "Send Email";
       alert("Sent!");
       msg.textContent = "✅ ¡Mensaje enviado con éxito!";
+      document.getElementById("message").value = "";
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("apellido").value = "";
+      
     },
     (err) => {
       btn.value = "Send Email";
