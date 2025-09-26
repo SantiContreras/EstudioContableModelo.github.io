@@ -70,7 +70,8 @@ form.addEventListener("submit", function (e) {
 });*/
 
                      
-
+const btn = document.getElementById("button");
+const msg = document.getElementById("msg");
 
 document.getElementById("contacForm").addEventListener("submit", function (event) {
   event.preventDefault();
