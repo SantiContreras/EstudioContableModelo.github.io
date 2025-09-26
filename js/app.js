@@ -70,7 +70,7 @@ form.addEventListener("submit", function (e) {
 });*/
 
                      
-const btn = document.getElementById("button");
+
 
 document.getElementById("contacForm").addEventListener("submit", function (event) {
   event.preventDefault();
@@ -85,10 +85,11 @@ document.getElementById("contacForm").addEventListener("submit", function (event
       btn.value = "Send Email";
       alert("Sent!");
       msg.textContent = "✅ ¡Mensaje enviado con éxito!";
-      document.getElementById("message").value = "";
+     
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("apellido").value = "";
+       document.getElementById("message").value = "";
       
     },
     (err) => {
@@ -98,17 +99,3 @@ document.getElementById("contacForm").addEventListener("submit", function (event
   );
 });
 
-const handleSubmit = event => {
-  event.preventDefault();
-
-  const myForm = event.target;
-  const formData = new FormData(myForm);
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
-  })
-    .then(() => navigate("/thank-you/"))
-    .catch(error => alert(error));
-};
