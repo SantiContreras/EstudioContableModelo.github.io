@@ -72,7 +72,7 @@ form.addEventListener("submit", function (e) {
                      
 const btn = document.getElementById("button");
 
-document.getElementById("form").addEventListener("submit", function (event) {
+document.getElementById("contacForm").addEventListener("submit", function (event) {
   event.preventDefault();
 
   btn.value = "Sending...";
